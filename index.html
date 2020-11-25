@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>L3go</title>
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="select-header">Select your figure</h2>
+    <div class="select-fighter">
+        <div class="blue-bg">
+            <div class="head-and-shoulders">
+                <div class="left-hair"></div>
+                <div class="right-hair"></div>
+                <div class="face"></div>
+                <div class="glasses-frame"></div>
+                <div class="right-lens"></div>
+                <div class="left-lens"></div>
+                <div class="ears top-ears"></div>
+                <div class="smile"></div>
+                <div class="neck"></div>
+                <div class="left-suspender"></div>
+                <div class="right-suspender"></div>
+                <div class="shoulders-top"></div>
+                <div class="stand" onclick="loadArena('Wolter')">
+                    <p class="color-change">Select</p>
+                </div>
+            </div>
+            <ul>
+                <li>Name: Wolter Site</li>
+                <li>Strength: <span>150</span></li>
+                <li>Health: <span class="hp">200</span> </li>
+                <li>Agility: <span>75</span> </li>
+            </ul>
+        </div>
+        <div class="pink-bg">
+            <div class="head-and-shoulders">
+                <div class="hairL"></div>
+                <div class="hairR"></div>
+                <div class="face"></div>
+                <div class="ears"></div>
+                <div class="left-eye">.</div>
+                <div class="right-eye">.</div>
+                <div class="smile"></div>
+                <div class="neck"></div>
+                <div class="shoulders"></div>
+                <div class="stand" onclick="loadArena('Sil')">
+                    <p class="color-change">Select</p>
+                </div>
+            </div>
+            <ul>
+                <li>Name: Sil Dollins</li>
+                <li>Strength: <span>200</span></li>
+                <li>Health: <span class="hp">100</span></li>
+                <li>Agility: <span>125</span></li>
+            </ul>
+        </div>
+        <div class="yellow-bg">
+            <div class="head-and-shoulders">
+                <div class="hairL hair-green"></div>
+                <div class="hairR hair-green"></div>
+                <div class="face">
+                    <div class="freckles">..</div>
+                </div>
+                <div class="ears"></div>
+                <div class="left-eye">.</div>
+                <div class="right-eye">.</div>
+                <div class="smile"></div>
+                <div class="neck"></div>
+                <div class="left-suspender"></div>
+                <div class="right-suspender"></div>
+                <div class="shoulders shoulder-green"></div>
+                <div class="stand" onclick="loadArena('Ed')">
+                    <p class="color-change">Select</p>
+                </div>
+            </div>
+            <ul>
+                <li>Name: Ed Eddy</li>
+                <li>Strength: <span>150</span></li>
+                <li>Health: <span class="hp">125</span></li>
+                <li>Agility: <span>150</span></li>
+            </ul>
+        </div>
+        <div class="green-bg">
+            <div class="head-and-shoulders">
+                <div class="left-hair hair-yellow"></div>
+                <div class="right-hair hair-yellow"></div>
+                <div class="face"></div>
+                <div class="glasses-frame yellow-frame"></div>
+                <div class="right-lens yellow-lens"></div>
+                <div class="left-lens yellow-lens"></div>
+                <div class="ears top-ears"></div>
+                <div class="smile"></div>
+                <div class="neck"></div>
+                <div class="shoulders-top"></div>
+                <div class="stand" onclick="loadArena('Eric')">
+                    <p class="color-change">Select</p>
+                </div>
+            </div>
+            <ul>
+                <li>Name: Eric Tapton</li>
+                <li>Strength: <span>100</span></li>
+                <li>Health: <span class="hp">300</span></li>
+                <li>Agility: <span>25</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="arena" style="display: none;">
+        <div class="chosen-figure"></div>
+        <div class="fight-arena">
+            <h5>Arena</h5>
+            <button id="btn" onclick="startFight()">FIGHT!</button>
+        </div>
+        <div class="pink-bg arena-pink">
+            <div class="head-and-shoulders">
+                <div class="hair"></div>
+                <div class="face"></div>
+                <div class="brow"></div>
+                <div class="ears"></div>
+                <div class="left-eye">.</div>
+                <div class="right-eye">.</div>
+                <div class="smile grin"></div>
+                <div class="neck"></div>
+                <div class="shoulders black"></div>
+                <div class="stand">
+                    <p class="damage"></p>
+                </div>
+            </div>
+            <ul>
+                <li>Name: Wet Bandit</li>
+                <li>Strength: <span>200</span></li>
+                <li>Health: <span class="health red">100</span></li>
+                <li>Agility: <span>125</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
